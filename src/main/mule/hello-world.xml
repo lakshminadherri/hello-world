@@ -20,7 +20,7 @@ output application/json
 ---
 {
 	status: "200",
-	message: "im happyyy nadh-111"
+	message: "im happyyy nadh"
 }]]></ee:set-payload>
 			</ee:message>
 			<ee:variables >
