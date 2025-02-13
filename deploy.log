@@ -1,0 +1,90 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------< 571fdbb5-1048-4a71-8935-0a3494006a49:hello-world >----------
+[INFO] Building hello-world 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------[ mule-application ]--------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean-1) @ hello-world ---
+[INFO] Deleting C:\Mulesoft\Developmement\mule-deployment-workspace\hello-world\target
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ hello-world ---
+[INFO] 
+[INFO] --- mule:4.3.0:clean (default-clean) @ hello-world ---
+[INFO] 
+[INFO] --- mule:4.3.0:validate (default-validate) @ hello-world ---
+[INFO] 
+[INFO] --- mule:4.3.0:initialize (default-initialize) @ hello-world ---
+[INFO] 
+[INFO] --- mule:4.3.0:generate-sources (default-generate-sources) @ hello-world ---
+[INFO] 
+[INFO] --- mule:4.3.0:process-sources (default-process-sources) @ hello-world ---
+[INFO] About to fetch required dependencies for artifact: 571fdbb5-1048-4a71-8935-0a3494006a49:hello-world:pom:1.0.0. This may take a while...
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ hello-world ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- mule:4.3.0:process-resources (default-process-resources) @ hello-world ---
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ hello-world ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- mule:4.3.0:compile (default-compile) @ hello-world ---
+[INFO] 
+[INFO] --- mule:4.3.0:process-classes (default-process-classes) @ hello-world ---
+[INFO] About to fetch required dependencies for artifact: 4f40dc10-e99e-11ef-b8bf-185e0fec9371:4f40dc10-e99e-11ef-b8bf-185e0fec9371:pom:4.7.2. This may take a while...
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] About to fetch required dependencies for artifact: 50cf1d30-e99e-11ef-b8bf-185e0fec9371:50cf1d30-e99e-11ef-b8bf-185e0fec9371:pom:4.7.2. This may take a while...
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] About to fetch required dependencies for artifact: 512887d0-e99e-11ef-b8bf-185e0fec9371:512887d0-e99e-11ef-b8bf-185e0fec9371:pom:4.7.2. This may take a while...
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] About to fetch required dependencies for artifact: 51f59bd0-e99e-11ef-b8bf-185e0fec9371:51f59bd0-e99e-11ef-b8bf-185e0fec9371:pom:4.7.2. This may take a while...
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] 
+[INFO] --- mule:4.3.0:generate-test-sources (default-generate-test-sources) @ hello-world ---
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ hello-world ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- mule:4.3.0:generate-test-resources (default-generate-test-resources) @ hello-world ---
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ hello-world ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- mule:4.3.0:test-compile (default-test-compile) @ hello-world ---
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ hello-world ---
+[INFO] 
+[INFO] --- mule:4.3.0:package (default-package) @ hello-world ---
+[INFO] Building zip: C:\Mulesoft\Developmement\mule-deployment-workspace\hello-world\target\hello-world-1.0.0-mule-application.jar
+[INFO] 
+[INFO] --- mule:4.3.0:verify (default-verify) @ hello-world ---
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ hello-world ---
+[INFO] Installing C:\Mulesoft\Developmement\mule-deployment-workspace\hello-world\pom.xml to C:\Users\lnadh\.m2\repository\571fdbb5-1048-4a71-8935-0a3494006a49\hello-world\1.0.0\hello-world-1.0.0.pom
+[INFO] Installing C:\Mulesoft\Developmement\mule-deployment-workspace\hello-world\target\hello-world-1.0.0-mule-application.jar to C:\Users\lnadh\.m2\repository\571fdbb5-1048-4a71-8935-0a3494006a49\hello-world\1.0.0\hello-world-1.0.0-mule-application.jar
+[INFO] 
+[INFO] --- mule:4.3.0:deploy (default-deploy) @ hello-world ---
+[INFO] Deploying artifact nadh-test-helloworld-demo
+[INFO] Starting deployment to Cloudhub-US-East-2
+[INFO] Deploying nadh-test-helloworld-demo
+[INFO] Checking if application: nadh-test-helloworld-demo has started
+[INFO] Artifact nadh-test-helloworld-demo deployed
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:35 min
+[INFO] Finished at: 2025-02-13T00:08:28Z
+[INFO] ------------------------------------------------------------------------

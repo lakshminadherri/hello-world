@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:api-gateway="http://www.mulesoft.org/schema/mule/api-gateway" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/mule/api-gateway/current/mule-api-gateway.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="bcebdc23-1848-4a98-9513-096a3b28d24b" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<api-gateway:autodiscovery apiId="${api.id}" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="288502b4-452f-4e98-98c8-db95f7a56ded" flowRef="hello-worldFlow" />
+	<configuration-properties doc:name="Configuration properties" doc:id="2d1ba848-9358-4743-96e9-837503815985" file="${env}.yaml" />
+	<flow name="hello-worldFlow" doc:id="b118a44a-00be-4b8b-9dc5-8f9b69bbc46a" >
+		<http:listener doc:name="Listener" doc:id="343dc696-4553-4fc6-889e-c5f5b4d6110e" path="/hello" allowedMethods="GET" config-ref="HTTP_Listener_config"/>
+		<ee:transform doc:name="Transform Message" doc:id="5218fb34-955d-49a7-9fe9-7202fa4a6b9d" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	status: "200",
+	message: "im happyyy"
+}]]></ee:set-payload>
+			</ee:message>
+			<ee:variables >
+			</ee:variables>
+		</ee:transform>
+	</flow>
+</mule>
